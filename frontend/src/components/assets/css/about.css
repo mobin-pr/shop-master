@@ -1,0 +1,31 @@
+body{
+  background: #e6dddd;
+}
+
+.img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 300px;
+}
+
+.img:hover {
+  transform: none; 
+}
+p {
+  line-height: 1.8;
+}
+
+.border-l-8 {
+  border-left-width: 8px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .img{
+    height: 200px;
+
+  }
+}

@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'vazir';
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url(../fonts/vazir-font-v16.1.0/Vazir-Medium.eot),
+  url(../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf),
+  url(../fonts/vazir-font-v16.1.0/Vazir-Medium.woff),
+  url(../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2);
+}
+
+.province-container{
+  margin-block: 4rem;
+  padding: 2rem 0;
+  border-radius: 30px;
+  background-color: #B3C8CF;
+}
+
+.province-box{
+  transition: all 0.5s;
+}
+
+.province-box:hover{
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px; 
+    object-fit: cover;
+    display: block; 
+    margin: 0 auto; 
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.provinces-caption{
+  font-family: 'vazir';
+  color: #432E54;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+/* @media screen and (max-width: 768px){
+  .province-container{
+    width: 90%;
+  }
+  .circular-image{
+    width: 400px;
+  }
+} */

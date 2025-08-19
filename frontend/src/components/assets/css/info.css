@@ -1,0 +1,92 @@
+
+.btn-read,
+.btn-read *,
+.btn-read :after,
+.btn-read :before,
+.btn-read:after,
+.btn-read:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-read {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #B1B2FF;
+
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-read:disabled {
+  cursor: default;
+}
+.btn-read:-moz-focusring {
+  outline: auto;
+}
+.btn-read svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-read [hidden] {
+  display: none;
+}
+.btn-read {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-read span {
+  mix-blend-mode: difference;
+}
+.btn-read:before {
+  -webkit-animation: bg-scroll 3s linear infinite;
+  animation: bg-scroll 3s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  background: repeating-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0.2) 0.7%,
+    transparent 0,
+    transparent 4%
+  );
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s, background-color 0.2s;
+  width: 300%;
+}
+.btn-read:hover:before {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-read:active:before {
+  background-color: #fff;
+}
+.btn-read:hover{
+  background-color: #3b82f6;
+}
+
+@media screen and (max-width:768px){
+  .btn-read{
+    padding: 0.8rem 1rem;
+    
+  }
+}

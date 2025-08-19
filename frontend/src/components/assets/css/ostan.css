@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'vazir';
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url(../fonts/vazir-font-v16.1.0/Vazir-Medium.eot),
+  url(../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf),
+  url(../fonts/vazir-font-v16.1.0/Vazir-Medium.woff),
+  url(../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2);
+}
+
+.ostan-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url(../images/bg-ostan.jpg) center/cover no-repeat fixed;
+  background-size: cover;
+  width: 85%;
+  height: 80vh;
+  margin: 4rem auto;
+  opacity: .8;
+}
+
+.ostan-text-box{
+  text-align: center;
+}
+
+.ostan-text-box-title{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 900px){
+  .ostan-container{
+    width: 85%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .ostan-container{
+    width: 90%;
+    height: 50vh;
+  }
+
+  .ostan-text-box-title{
+    font-size: 1.5rem;
+  }
+}

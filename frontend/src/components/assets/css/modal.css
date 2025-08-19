@@ -1,0 +1,73 @@
+.modal {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 400px; 
+    background-color: rgb(62, 221, 62);
+    margin: 10px;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: green; 
+}
+
+.timer {
+    height: 4px; 
+    background-color: rgb(240, 137, 63); 
+    width: 100%;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    animation: timer 2s forwards; 
+}
+
+@keyframes timer {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+
+
+.error-modal {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.error-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 400px; 
+    background-color: rgb(221, 62, 62);
+    margin: 10px;
+}

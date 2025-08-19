@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  width: 85%; 
+  position: relative;
+  margin: auto;
+  overflow: hidden; 
+  border-radius: 10px; 
+  
+}
+
+.slide {
+  display: none;
+  position: relative;
+  animation: fade 1.5s ease; 
+
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px; 
+
+}
+
+.active {
+  display: block; 
+}
+
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: calc(auto);
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px; 
+  user-select: none;
+  transform: translateY(-50%);
+  
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px; 
+}
+
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 5px; 
+}
+
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .caption{
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .view-product-button{
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .slideshow-container{
+    width: 100%;
+  }
+
+  .slide img{
+    height: 25vh;
+  }
+}

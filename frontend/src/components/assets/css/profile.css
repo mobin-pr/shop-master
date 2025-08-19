@@ -1,0 +1,168 @@
+.btn-edit,
+.btn-edit *,
+.btn-edit :after,
+.btn-edit :before,
+.btn-edit:after,
+.btn-edit:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-edit {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #B1B2FF;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-edit:disabled {
+  cursor: default;
+}
+.btn-edit:-moz-focusring {
+  outline: auto;
+}
+.btn-edit svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-edit [hidden] {
+  display: none;
+}
+.btn-edit {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 1rem;
+  position: relative;
+}
+.btn-edit span {
+  mix-blend-mode: difference;
+}
+.btn-edit:before {
+  -webkit-animation: bg-scroll 3s linear infinite;
+  animation: bg-scroll 3s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  background: repeating-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0.2) 0.7%,
+    transparent 0,
+    transparent 4%
+  );
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s, background-color 0.2s;
+  width: 300%;
+}
+.btn-edit:hover:before {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-edit:active:before {
+  background-color: #fff;
+}
+/* ***************************** */
+.btn-logout,
+.btn-logout *,
+.btn-logout :after,
+.btn-logout :before,
+.btn-logout:after,
+.btn-logout:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-logout {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ef8585;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-logout:disabled {
+  cursor: default;
+}
+.btn-logout:-moz-focusring {
+  outline: auto;
+}
+.btn-logout svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-logout [hidden] {
+  display: none;
+}
+.btn-logout {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 1rem;
+  position: relative;
+}
+.btn-logout span {
+  mix-blend-mode: difference;
+}
+.btn-logout:before {
+  -webkit-animation: bg-scroll 3s linear infinite;
+  animation: bg-scroll 3s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  background: repeating-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0.2) 0.7%,
+    transparent 0,
+    transparent 4%
+  );
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s, background-color 0.2s;
+  width: 300%;
+}
+.btn-logout:hover:before {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-logout:active:before {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .mobile-adjust {
+    padding-top: 1rem; 
+    margin-top: 0; 
+  }
+}

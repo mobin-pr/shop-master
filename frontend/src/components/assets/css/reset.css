@@ -1,0 +1,8 @@
+.main{
+    background: url("../images/bg.webp") no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    background-position: center;
+}
